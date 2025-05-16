@@ -48,6 +48,7 @@ app.post("/login", express.json(), (req, res) => {
 
     console.log("\n############### -> path: '/login' solicited");
 });
+
 app.get("/userQRs/:userId", (req, res) => {
     try {
 
@@ -134,7 +135,7 @@ app.post("/scanQr", multerErrorHandler, async (req, res) => {
             };
 
             // console.log(result.value); // Debugging
-            res.json({...result.value, owner: owner, name: getQrCode(result.value.id).name}); // will return {iat, id, content, name, owner}
+            res.status(200).json({...result.value, owner: owner, name: getQrCode(result.value.id).name}); // will return {iat, id, content, name, owner}
         } else {
             (result.error) ? console.error(result.error) : console.error("Unknown error");
             res.status(400).send("Invalid QR code.");
