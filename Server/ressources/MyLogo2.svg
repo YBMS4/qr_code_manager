@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" stroke="url(#BorderGradiant)" stroke-width="1" fill="#000046"/>
+        <linearGradient id="monGradiant" x1="0" y1="0" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: rgb(162, 246, 246);" />
+            <stop offset="100%" style="stop-color: white;" />
+        </linearGradient>
+        <linearGradient id="monGradiant2" x1="100%" y1="0" x2="0" y2="100%">
+            <stop offset="0%" style="stop-color: rgb(162, 246, 246);" />
+            <stop offset="100%" style="stop-color: white;" />
+        </linearGradient>
+
+        <linearGradient id="BorderGradiant" x1="0%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" style="stop-color:cyan;" />
+            <stop offset="50%" style="stop-color: blue;" />
+            <stop offset="100%" style="stop-color:white;" />
+        </linearGradient>
+
+        <!-- Parfait -->
+        <!-- <line x1="30" x2="50" y1="35" y2="50" stroke="yellow" stroke-width="3"/>
+        <line x1="50" x2="70" y1="50" y2="35" stroke="yellow" stroke-width="3"/>
+        <line x1="50" x2="50" y1="49.5" y2="70" stroke="yellow" stroke-width="3"/> -->
+        <!-- Background -->
+        <g>
+            <line x1="25" x2="50" y1="30" y2="50" stroke="#0077ff" stroke-width="6" stroke-linecap="round"/>
+            <line x1="50" x2="75" y1="50" y2="30" stroke="#0077ff" stroke-width="6" stroke-linecap="round"/>
+            <line x1="50" x2="50" y1="49.5" y2="75" stroke="#0077ff" stroke-width="6" stroke-linecap="round"/>
+        </g>
+
+        <!-- Body -->
+        <g>
+            <line x1="25" x2="50" y1="30" y2="50" stroke="url(#monGradiant)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="50" x2="75" y1="50" y2="30" stroke="url(#monGradiant2)" stroke-width="5" stroke-linecap="round"/>
+            <line x1="50" x2="50" y1="49.5" y2="75" stroke="white" stroke-width="5" stroke-linecap="round"/>
+        </g>
+</svg>
